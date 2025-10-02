@@ -90,7 +90,7 @@ onMounted(() => {
             <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">My Latest Projects</h1>
             <div class="projects-div">
                 <button class="project-card"
-                        v-for="(project, index) in latestProjects" 
+                        v-for="(project, index) in latestProjects.slice().reverse()" 
                         :key="index"
                         :data-href="project.link" 
                         @click="goToProject(project.link)"

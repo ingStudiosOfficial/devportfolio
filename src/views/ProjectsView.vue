@@ -23,7 +23,7 @@
     <h1 class="section-header">My Projects</h1>
     <div class="projects-div">
         <button class="project-card"
-                v-for="(project, index) in allProjects" 
+                v-for="(project, index) in allProjects.slice().reverse()" 
                 :key="index"
                 :data-href="project.link" 
                 @click="goToProject(project.link)"
