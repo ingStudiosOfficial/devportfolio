@@ -1,0 +1,32 @@
+[
+    {
+        "name": "InfiniteCopy",
+        "description": "Copy Anything, Infinitely.",
+        "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/infinitecopy/fa15ea90440dcdd7dbc5111b5b7917b9a9bf4e5a/InfiniteCopy%20-%20Chrome%20Extension/assets/logo.svg",
+        "link": "https://github.com/ing-Studios-Web-Labs/infinitecopy"
+    },
+    {
+        "name": "Terminal Task Manager",
+        "description": "A simple task manager in your terminal made with Java.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/terminaltaskmanager/3b5ca19c23c82e1175f471758e014c825977febf/terminaltaskmangericon.svg",
+        "link": "https://github.com/ingStudiosOfficial/terminaltaskmanager"
+    },
+    {
+        "name": "LauncherTab",
+        "description": "Your Material You themed New Tab page.",
+        "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/launchertab/47c5bf0d5dff65df1262dbeb8afb12f5e25326fd/LauncherTab%20-%20Chrome%20Extension/assets/logo.svg",
+        "link": "https://github.com/ing-Studios-Web-Labs/launchertab"
+    },
+    {
+        "name": "Todayflect",
+        "description": "A Journal manager in Gurted.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/todayflect/refs/heads/main/assets/todayflectlogo.png",
+        "link": "https://github.com/ingStudiosOfficial/todayflect"
+    },
+    {
+        "name": "RugplayLite",
+        "description": "Rugplay Lite is a lightweight view-only version of FaceDev's Rugplay.",
+        "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/rugplaylite/76735d560856a0226d9bc46d91963263b790e31c/public/assets/RugplayLite%20Logo.svg",
+        "link": "https://github.com/ing-Studios-Web-Labs/rugplaylite"
+    }
+]
