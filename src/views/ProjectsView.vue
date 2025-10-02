@@ -10,6 +10,10 @@
         allProjects.value = projects;
     }
 
+    function goToProject(link) {
+        window.open(link, '_blank');
+    }
+
     onMounted(() => {
         displayAllProjects();
     });
