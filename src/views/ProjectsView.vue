@@ -27,7 +27,7 @@
                 :key="index"
                 :data-href="project.link" 
                 @click="goToProject(project.link)"
-                data-aos="fade-up" :data-aos-delay="500 + (index * 150)">
+                data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
             <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
             <h2>{{ project.name }}</h2>
             <p>{{ project.description }}</p>

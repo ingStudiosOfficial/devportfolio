@@ -2,6 +2,8 @@
 import { RouterLink, RouterView } from 'vue-router';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
+import Tooltip from './components/Tooltip.vue';
+
 import '@material/web/iconbutton/filled-icon-button.js';
 import '@material/web/icon/icon.js';
 
@@ -32,12 +34,20 @@ onMounted(() => {
 <template>
     <header>
         <h1>Ethan Lee's Portfolio</h1>
-        <md-filled-icon-button target="_self" href="/">
-            <md-icon>home</md-icon>
-        </md-filled-icon-button>
-        <md-filled-icon-button target="_self" href="/projects">
-            <md-icon>work</md-icon>
-        </md-filled-icon-button>
+        <Tooltip text="Home" offset="-100px">
+            <template #trigger>
+                <md-filled-icon-button target="_self" href="/">
+                    <md-icon>home</md-icon>
+                </md-filled-icon-button>
+            </template>
+        </Tooltip>
+        <Tooltip text="Projects" offset="-100px">
+            <template #trigger>
+                <md-filled-icon-button target="_self" href="/projects">
+                    <md-icon>work</md-icon>
+                </md-filled-icon-button>
+            </template>
+        </Tooltip>
     </header>
     <main>
         <RouterView />

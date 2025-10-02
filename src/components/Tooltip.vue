@@ -1,6 +1,13 @@
 <script setup>
 defineProps({
-  text: String
+	text: {
+		type: String,
+		required: true
+	},
+	offset: {
+		type: String,
+		default: '25px'
+	}
 });
 </script>
 
@@ -23,7 +30,7 @@ defineProps({
 		visibility: hidden;
 		opacity: 0;
 		position: absolute;
-		bottom: calc(100% + 25px);
+		bottom: calc(100% + v-bind(offset));
 		left: 50%;
 		transform: translateX(-50%);
 		

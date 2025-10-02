@@ -59,7 +59,8 @@ onMounted(() => {
                     <Tooltip 
                         v-for="(technology, index) in technologies"
                         :key="'track2-' + index"
-                        :text="technology.name">
+                        :text="technology.name"
+                        offset="25px">
                         <template #trigger>
                             <img class="technology-card"
                                 :src="technology.image"
@@ -74,7 +75,8 @@ onMounted(() => {
                     <Tooltip 
                         v-for="(technology, index) in technologies"
                         :key="'track2-' + index"
-                        :text="technology.name">
+                        :text="technology.name"
+                        offset="25px">
                         <template #trigger>
                             <img class="technology-card"
                                 :src="technology.image"
@@ -104,7 +106,7 @@ onMounted(() => {
         </div>
         <div class="section">
             <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">Contact Me</h1>
-            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">Interested in hearing more? Contact me for enquiries at <a href="mailto:ingstudiosofficial@gmail.com?subject=Reaching%20Out">ingstudiosofficial@gmail.com</a>, join my <a href="https://discord.gg/MTZ4W5nG35">Discord server</a>, or DM me on <span class=word-emphasis>Discord</span> (<span class="word-emphasis">@turtlovesturtles</span>).</p>
+            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">Interested in hearing more? Contact me for enquiries at <a href="mailto:ingstudiosofficial@gmail.com?subject=Reaching%20Out" target="_blank">ingstudiosofficial@gmail.com</a>, join my <a href="https://discord.gg/MTZ4W5nG35">Discord server</a>, or DM me on <span class=word-emphasis>Discord</span> (<span class="word-emphasis">@turtlovesturtles</span>).</p>
         </div>
     </div>
 </template>
