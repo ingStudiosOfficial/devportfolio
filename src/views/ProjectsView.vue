@@ -20,7 +20,7 @@
 </script>
 
 <template>
-    <h1 class="section-header">My Projects</h1>
+    <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">My Projects</h1>
     <div class="projects-div">
         <button class="project-card"
                 v-for="(project, index) in allProjects.slice().reverse()" 

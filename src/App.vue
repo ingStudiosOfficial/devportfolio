@@ -33,17 +33,17 @@ onMounted(() => {
 
 <template>
     <header>
-        <h1>Ethan Lee's Portfolio</h1>
+        <h1 class="header-text">Ethan Lee's Portfolio</h1>
         <Tooltip text="Home" offset="-100px">
             <template #trigger>
-                <md-filled-icon-button target="_self" href="/">
+                <md-filled-icon-button target="_self" href="/" class="nav-button">
                     <md-icon>home</md-icon>
                 </md-filled-icon-button>
             </template>
         </Tooltip>
         <Tooltip text="Projects" offset="-100px">
             <template #trigger>
-                <md-filled-icon-button target="_self" href="/projects">
+                <md-filled-icon-button target="_self" href="/projects" class="nav-button">
                     <md-icon>work</md-icon>
                 </md-filled-icon-button>
             </template>
