@@ -1,9 +1,11 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
+// Material Web components
 import '@material/web/button/outlined-button.js';
 import '@material/web/icon/icon.js';
 import '@material/web/button/filled-tonal-button.js';
+import '@material/web/ripple/ripple.js';
 
 import Tooltip from '../components/Tooltip.vue';
 
@@ -118,6 +120,7 @@ onMounted(() => {
                         :data-href="project.link" 
                         @click="goToProject(project.link)"
                         data-aos="fade-up" :data-aos-delay="500 + (index * 150)">
+                    <md-ripple></md-ripple>
                     <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
                     <h2>{{ project.name }}</h2>
                     <p>{{ project.description }}</p>

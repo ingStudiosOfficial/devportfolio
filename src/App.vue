@@ -4,8 +4,10 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 import Tooltip from './components/Tooltip.vue';
 
+// Material Web components
 import '@material/web/iconbutton/filled-icon-button.js';
 import '@material/web/icon/icon.js';
+import '@material/web/ripple/ripple.js';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the CSS file
@@ -54,12 +56,15 @@ onMounted(() => {
     </main>
     <footer>
         <button class="social-icon" data-href="https://youtube.com/@ai-turtle">
+            <md-ripple></md-ripple>
             <img src="/youtube_icon.png" class="social-icon-img"/>
         </button>
         <button class="social-icon" data-href="https://github.com/ingStudiosOfficial">
+            <md-ripple></md-ripple>
             <img src="/github_icon.png" class="social-icon-img"/>
         </button>
         <button class="social-icon" data-href="https://reddit.com/u/DouDouAndFriends">
+            <md-ripple></md-ripple>
             <img src="/reddit_icon.png" class="social-icon-img"/>
         </button>
     </footer>

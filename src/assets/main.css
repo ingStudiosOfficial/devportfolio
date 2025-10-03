@@ -12,6 +12,10 @@ body {
     overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     width: 100vw;
     display: flex;

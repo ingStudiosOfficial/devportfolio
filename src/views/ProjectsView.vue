@@ -1,6 +1,9 @@
 <script setup>
     import { onMounted, ref } from 'vue';
 
+    // Material Web components
+    import '@material/web/ripple/ripple.js';
+
     import projects from '../data/projects.json' with { type: 'json' };
     console.log('Projects:', projects);
 
@@ -28,6 +31,7 @@
                 :data-href="project.link" 
                 @click="goToProject(project.link)"
                 data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
+            <md-ripple></md-ripple>
             <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
             <h2>{{ project.name }}</h2>
             <p>{{ project.description }}</p>
