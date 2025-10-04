@@ -23,19 +23,21 @@
 </script>
 
 <template>
-    <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">My Projects</h1>
-    <div class="projects-div">
-        <button class="project-card"
-                v-for="(project, index) in allProjects.slice().reverse()" 
-                :key="index"
-                :data-href="project.link" 
-                @click="goToProject(project.link)"
-                data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
-            <md-ripple></md-ripple>
-            <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
-            <h2>{{ project.name }}</h2>
-            <p>{{ project.description }}</p>
-        </button>
+    <div class="content-wrapper">
+        <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">My Projects</h1>
+        <div class="projects-div">
+            <button class="project-card"
+                    v-for="(project, index) in allProjects.slice().reverse()" 
+                    :key="index"
+                    :data-href="project.link" 
+                    @click="goToProject(project.link)"
+                    data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
+                <md-ripple></md-ripple>
+                <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
+            </button>
+        </div>
     </div>
 </template>
 
@@ -48,7 +50,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        width: 80%;
+        width: 80vw;
         padding: 10px;
         box-sizing: border-box;
         gap: 10px;
@@ -65,12 +67,29 @@
         box-sizing: border-box;
         padding: 10px;
         width: 100%;
-        height: 300px;
+        min-height: 300px;
         text-align: center;
     }
 
     .project-image {
         width: 50%;
         border-radius: 25px;
+    }
+
+
+    @media (max-width: 768px) {
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+        }
+
+        .projects-div {
+            display: flex;
+            flex-direction: column;
+            width: 95vw;
+        }
     }
 </style>
