@@ -388,6 +388,7 @@ onMounted(() => {
 
         .project-card {
             width: 100%;
+            --aos-delay: 500ms !important;
         }
 
         .section, .section-variant {
