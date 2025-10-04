@@ -91,5 +91,9 @@
             flex-direction: column;
             width: 95vw;
         }
+
+        .project-card {
+            --aos-delay: 500ms !important;
+        }
     }
 </style>
