@@ -28,5 +28,11 @@
         "description": "Rugplay Lite is a lightweight view-only version of FaceDev's Rugplay.",
         "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/rugplaylite/76735d560856a0226d9bc46d91963263b790e31c/public/assets/RugplayLite%20Logo.svg",
         "link": "https://github.com/ing-Studios-Web-Labs/rugplaylite"
+    },
+    {
+        "name": "Turtle Identifier",
+        "description": "A turtle identifier with a dichotomous key and a flowchart.",
+        "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/turtleidentifier/refs/heads/main/public/favicon.ico",
+        "link": "https://github.com/ing-Studios-Web-Labs/turtleidentifier"
     }
 ]
