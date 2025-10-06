@@ -34,5 +34,11 @@
         "description": "A turtle identifier with a dichotomous key and a flowchart.",
         "image": "https://raw.githubusercontent.com/ing-Studios-Web-Labs/turtleidentifier/refs/heads/main/public/favicon.ico",
         "link": "https://github.com/ing-Studios-Web-Labs/turtleidentifier"
+    },
+    {
+        "name": "Arduino IR Pin Unlock",
+        "description": "Arduino pin unlock using an IR remote.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/arduino-ir-pin-unlock/refs/heads/main/Arduino%20IR%20Pin%20Unlock.png",
+        "link": "https://github.com/ingStudiosOfficial/arduino-ir-pin-unlock"
     }
 ]
