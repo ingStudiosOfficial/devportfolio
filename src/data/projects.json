@@ -40,5 +40,11 @@
         "description": "Arduino pin unlock using an IR remote.",
         "image": "https://raw.githubusercontent.com/ingStudiosOfficial/arduino-ir-pin-unlock/refs/heads/main/Arduino%20IR%20Pin%20Unlock.png",
         "link": "https://github.com/ingStudiosOfficial/arduino-ir-pin-unlock"
+    },
+    {
+        "name": "Vyntr for Desktop",
+        "description": "FaceDev's Vnytr but in a TUI.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/vyntrdesktop/f9d3e1f78eaf86cf89a1681aa6959537100e51f9/vyntr.svg",
+        "link": "https://github.com/ingStudiosOfficial/vyntrdesktop"
     }
 ]
