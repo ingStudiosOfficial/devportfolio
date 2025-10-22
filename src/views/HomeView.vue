@@ -28,7 +28,7 @@ const sectionRefsMap = {
     aboutMeSection,
     projectsSection,
     techStackSection,
-    contactSection,
+    contactSection
 };
 
 const sections = ref([
@@ -170,7 +170,8 @@ onMounted(() => {
         </div>
         <div class="section" ref="contactSection">
             <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">Contact Me</h1>
-            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">Interested in hearing more? Contact me for enquiries at <a href="mailto:ingstudiosofficial@gmail.com?subject=Reaching%20Out" target="_blank">ingstudiosofficial@gmail.com</a>, join my <a href="https://discord.gg/MTZ4W5nG35">Discord server</a>, or DM me on <span class=word-emphasis>Discord</span> (<span class="word-emphasis">@turtlovesturtles</span>).</p>
+            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">Interested in hearing more? Contact me for enquiries at <a href="mailto:ingstudiosofficial@gmail.com?subject=Reaching%20Out" target="_blank">ingstudiosofficial@gmail.com</a>, join my <a href="https://discord.gg/MTZ4W5nG35" target="_blank">Discord server</a>, or DM me on <a href="https://discord.com/users/1128648335096549487">Discord</a> (<span class="word-emphasis">@turtlovesturtles</span>).</p>
+            <a href="https://discord.com/users/1128648335096549487" data-aos="fade-right" data-aos-delay="500" target="_blank"><img src="https://lanyard.cnrad.dev/api/1128648335096549487" /></a>
         </div>
     </div>
 </template>
