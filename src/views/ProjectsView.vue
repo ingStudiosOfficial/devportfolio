@@ -3,6 +3,7 @@
 
     // Material Web components
     import '@material/web/ripple/ripple.js';
+    import '@material/web/focus/md-focus-ring.js';
 
     import projects from '../data/projects.json' with { type: 'json' };
     console.log('Projects:', projects);
@@ -33,6 +34,7 @@
                     @click="goToProject(project.link)"
                     data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
                 <md-ripple></md-ripple>
+                <md-focus-ring style="--md-focus-ring-shape: 25px"></md-focus-ring>
                 <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
                 <h2>{{ project.name }}</h2>
                 <p>{{ project.description }}</p>
@@ -69,6 +71,7 @@
         width: 100%;
         min-height: 300px;
         text-align: center;
+        outline: none;
     }
 
     .project-image {

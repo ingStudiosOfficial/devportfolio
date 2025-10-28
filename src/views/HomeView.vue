@@ -6,6 +6,7 @@ import '@material/web/button/outlined-button.js';
 import '@material/web/icon/icon.js';
 import '@material/web/button/filled-tonal-button.js';
 import '@material/web/ripple/ripple.js';
+import '@material/web/focus/md-focus-ring.js';
 
 import Tooltip from '../components/Tooltip.vue';
 
@@ -121,6 +122,7 @@ onMounted(() => {
                         @click="goToProject(project.link)"
                         data-aos="fade-up" :data-aos-delay="500 + (index * 150)">
                     <md-ripple></md-ripple>
+                    <md-focus-ring style="--md-focus-ring-shape: 25px"></md-focus-ring>
                     <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
                     <h2>{{ project.name }}</h2>
                     <p>{{ project.description }}</p>
@@ -277,6 +279,7 @@ onMounted(() => {
         width: 100%;
         height: 300px;
         text-align: center;
+        outline: none;
     }
 
     .project-image {
