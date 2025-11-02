@@ -46,5 +46,17 @@
         "description": "FaceDev's Vnytr but in a TUI.",
         "image": "https://raw.githubusercontent.com/ingStudiosOfficial/vyntrdesktop/f9d3e1f78eaf86cf89a1681aa6959537100e51f9/vyntr.svg",
         "link": "https://github.com/ingStudiosOfficial/vyntrdesktop"
+    },
+    {
+        "name": "ProperScript",
+        "description": "JavaScript, but proper.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/properscript/ed72abdc26f384969a15efc270458f224bf5ca0f/images/ProperScript_Logo.svg",
+        "link": "https://github.com/ingStudiosOfficial/properscript"
+    },
+    {
+        "name": "Cordfriend AI",
+        "description": "A free, open-source AI Discord bot.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/cordfriendai/f2192c8adad05be33433561006e5bf581127dd7e/public/cordfriend_svg.svg",
+        "link": "https://github.com/ingStudiosOfficial/cordfriendai"
     }
 ]
