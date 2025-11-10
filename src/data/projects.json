@@ -55,7 +55,7 @@
     },
     {
         "name": "Cordfriend AI",
-        "description": "A free, open-source AI Discord bot.",
+        "description": "A free, open-source AI Discord bot built in Golang.",
         "image": "https://raw.githubusercontent.com/ingStudiosOfficial/cordfriendai/f2192c8adad05be33433561006e5bf581127dd7e/public/cordfriend_svg.svg",
         "link": "https://github.com/ingStudiosOfficial/cordfriendai"
     }
