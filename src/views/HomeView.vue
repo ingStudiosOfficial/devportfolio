@@ -270,7 +270,7 @@ onMounted(() => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         background-color: var(--md-sys-color-primary-container);
         color: var(--md-sys-color-on-primary-container);
         border-radius: 25px;

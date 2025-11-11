@@ -58,5 +58,11 @@
         "description": "A free, open-source AI Discord bot built in Golang.",
         "image": "https://raw.githubusercontent.com/ingStudiosOfficial/cordfriendai/f2192c8adad05be33433561006e5bf581127dd7e/public/cordfriend_svg.svg",
         "link": "https://github.com/ingStudiosOfficial/cordfriendai"
+    },
+    {
+        "name": "Calculite",
+        "description": "A Material You themed calculator built with Vue.js.",
+        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/calculite/refs/heads/main/public/calculite_logo.png",
+        "link": "https://github.com/ingStudiosOfficial/calculite"
     }
 ]
