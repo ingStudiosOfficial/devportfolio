@@ -107,10 +107,10 @@ onMounted(() => {
         </div>
         <div class="section-variant" ref="aboutMeSection">
             <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">About Me</h1>
-            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">I mainly do <span class="word-emphasis">web projects</span> such as <span class="word-emphasis">web applications</span> and <span class="word-emphasis">Chrome Extensions</span>. I also have experience working with <span class="word-emphasis">Python</span>, <span class="word-emphasis">Java</span>, and <span class="word-emphasis">Lua</span>.</p>
+            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">I mainly do <span class="word-emphasis">web projects</span> such as <span class="word-emphasis">web applications</span> and <span class="word-emphasis">Chrome Extensions</span>. I also have experience working with <span class="word-emphasis">Go</span>, <span class="word-emphasis">Python</span>, <span class="word-emphasis">Java</span>, and <span class="word-emphasis">Lua</span>.</p>
             <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">I mainly use <span class="word-emphasis">Python</span> for <span class="word-emphasis">machine learning</span>, <span class="word-emphasis">data analysis</span>, and <span class="word-emphasis">child proccesses</span> to make use of Python's extensive libraries.</p>
             <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">Some <span class="word-emphasis">Java</span> CLI programmes I created include a <span class="word-emphasis">task manager in your terminal</span> and a <span class="word-emphasis">CSV viewer</span>.</p>
-            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">I also use <span class="word-emphasis">Lua</span> for <span class="word-emphasis">Roblox game development</span> (not what I do though) and the <span class="word-emphasis">Gurted framework</span> (a web framework that runs on the gurt:// protocol).</p>
+            <p class="section-paragraph" data-aos="fade-right" data-aos-delay="500">I also made a <span class="word-emphasis">Discord bot</span> with <span class="word-emphasis">DiscordGo</span> and <span class="word-emphasis">Go</span>.</p>
         </div>
         <div class="section" ref="projectsSection">
             <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">My Latest Projects</h1>
