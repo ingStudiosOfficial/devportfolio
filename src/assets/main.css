@@ -17,6 +17,9 @@ body::-webkit-scrollbar {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -27,6 +30,7 @@ header {
     color: var(--md-sys-color-on-surface-variant);
     box-shadow: 0 4px 6px 0 rgba(255, 255, 255, 0.1);
     height: 15vh;
+    z-index: 100;
 }
 
 footer {

@@ -14,6 +14,7 @@ import projects from '../data/projects.json' with { type: 'json' };
 console.log('Projects:', projects);
 
 import loadedTechnologies from '../data/technologies.json' with { type: 'json' };
+import { formatProjects } from '@/utilities/projects';
 console.log('Technologies:', loadedTechnologies);
 
 const latestProjects = ref([]);
@@ -32,7 +33,7 @@ const sectionRefsMap = {
     contactSection
 };
 
-const sections = ref([
+const sections = [
     {
         "name": "About Me",
         "ref": "aboutMeSection"
@@ -49,11 +50,12 @@ const sections = ref([
         "name": "Contact Me",
         "ref": "contactSection"
     }
-])
+];
 
-function displayLatestProjects() {
+async function displayLatestProjects() {
     const projectsArray = projects.slice(-3);
-    latestProjects.value = projectsArray;
+    latestProjects.value = await formatProjects(projectsArray);
+    console.log('Latest projects:', latestProjects.value);
 }
 
 function displayTechnologies() {
@@ -94,6 +96,7 @@ onMounted(() => {
                 <div class="greeting-section">
                     <h1 class="greeting-header">Hi, I'm <span class="word-emphasis">Ethan</span></h1>
                     <p class="greeting-captions">a <span class="word-emphasis">full-stack web developer</span> who makes weird stuff.</p>
+                    <p class="greeting-captions">If you want to see a OS-themed version of the portfolio, click <a href="https://leethana.ingstudios.dev">here</a>.</p>
                 </div>
                 <md-filled-tonal-button class="continue-button" @click="scrollDownwards()">Continue</md-filled-tonal-button>
             </div>
@@ -124,8 +127,9 @@ onMounted(() => {
                     <md-ripple></md-ripple>
                     <md-focus-ring style="--md-focus-ring-shape: 25px"></md-focus-ring>
                     <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
-                    <h2>{{ project.name }}</h2>
+                    <h2>{{ project.name }}<span v-if="project.stars"> ({{ project.stars }} {{ project.stars === 1 ? 'star' : 'stars' }})</span></h2>
                     <p>{{ project.description }}</p>
+                    <p v-if="project.language">Language: {{ project.language }}</p>
                 </button>
                 <md-outlined-button data-aos="fade-right" data-aos-delay="500" href="/projects">
                     All Projects
@@ -277,7 +281,6 @@ onMounted(() => {
         box-sizing: border-box;
         padding: 10px;
         width: 100%;
-        height: 300px;
         text-align: center;
         outline: none;
     }

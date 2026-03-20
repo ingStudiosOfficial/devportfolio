@@ -5,7 +5,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 import Tooltip from './components/Tooltip.vue';
 
 // Material Web components
-import '@material/web/iconbutton/filled-icon-button.js';
+import '@material/web/iconbutton/icon-button.js';
 import '@material/web/icon/icon.js';
 import '@material/web/ripple/ripple.js';
 
@@ -38,16 +38,16 @@ onMounted(() => {
         <h1 class="header-text">Ethan Lee's Portfolio</h1>
         <Tooltip text="Home" offset="-100px">
             <template #trigger>
-                <md-filled-icon-button target="_self" href="/" class="nav-button">
+                <md-icon-button target="_self" href="/" class="nav-button">
                     <md-icon>home</md-icon>
-                </md-filled-icon-button>
+                </md-icon-button>
             </template>
         </Tooltip>
         <Tooltip text="Projects" offset="-100px">
             <template #trigger>
-                <md-filled-icon-button target="_self" href="/projects" class="nav-button">
+                <md-icon-button target="_self" href="/projects" class="nav-button">
                     <md-icon>work</md-icon>
-                </md-filled-icon-button>
+                </md-icon-button>
             </template>
         </Tooltip>
     </header>

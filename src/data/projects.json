@@ -61,8 +61,17 @@
     },
     {
         "name": "Calculite",
-        "description": "A Material You themed calculator built with Vue.js.",
-        "image": "https://raw.githubusercontent.com/ingStudiosOfficial/calculite/refs/heads/main/public/calculite_logo.png",
-        "link": "https://github.com/ingStudiosOfficial/calculite"
+        "link": "https://api.github.com/repos/ingStudiosOfficial/calculite",
+        "newFormat": true
+    },
+    {
+        "name": "leethanaOS",
+        "link": "https://api.github.com/repos/ingStudiosOfficial/leethanaos",
+        "newFormat": true
+    },
+    {
+        "name": "Examduler",
+        "link": "https://api.github.com/repos/ingStudiosOfficial/examduler",
+        "newFormat": true
     }
 ]

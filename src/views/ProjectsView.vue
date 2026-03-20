@@ -6,12 +6,21 @@
     import '@material/web/focus/md-focus-ring.js';
 
     import projects from '../data/projects.json' with { type: 'json' };
+    import labsProjects from '../data/labs_projects.json' with { type: 'json' };
+    import { formatProjects } from '@/utilities/projects';
     console.log('Projects:', projects);
 
     const allProjects = ref([]);
+    const allLabsProjects = ref([]);
 
-    function displayAllProjects() {
-        allProjects.value = projects;
+    async function displayAllProjects() {
+        allProjects.value = await formatProjects(projects);
+        console.log('All projects:', allProjects.value);
+    }
+
+    async function displayLabsProjects() {
+        allLabsProjects.value = await formatProjects(labsProjects);
+        console.log('Labs projects:', labsProjects.value);
     }
 
     function goToProject(link) {
@@ -20,6 +29,7 @@
 
     onMounted(() => {
         displayAllProjects();
+        displayLabsProjects();
     });
 </script>
 
@@ -36,8 +46,25 @@
                 <md-ripple></md-ripple>
                 <md-focus-ring style="--md-focus-ring-shape: 25px"></md-focus-ring>
                 <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
-                <h2>{{ project.name }}</h2>
+                <h2>{{ project.name }}<span v-if="project.stars"> ({{ project.stars }} {{ project.stars === 1 ? 'star' : 'stars' }})</span></h2>
                 <p>{{ project.description }}</p>
+                <p v-if="project.language">Language: {{ project.language }}</p>
+            </button>
+        </div>
+        <h1 class="section-header" data-aos="fade-right" data-aos-delay="500">Labs Projects</h1>
+        <div class="projects-div">
+            <button class="project-card"
+                    v-for="(project, index) in allLabsProjects.slice().reverse()" 
+                    :key="index"
+                    :data-href="project.link" 
+                    @click="goToProject(project.link)"
+                    data-aos="fade-up" :data-aos-delay="500 + ((index % 3) * 150)">
+                <md-ripple></md-ripple>
+                <md-focus-ring style="--md-focus-ring-shape: 25px"></md-focus-ring>
+                <img :src="project.image" :alt="project.name + ' project image'" class="project-image" draggable="false"/>
+                <h2>{{ project.name }}<span v-if="project.stars"> ({{ project.stars }} {{ project.stars === 1 ? 'star' : 'stars' }})</span></h2>
+                <p>{{ project.description }}</p>
+                <p v-if="project.language">Language: {{ project.language }}</p>
             </button>
         </div>
     </div>
@@ -69,7 +96,6 @@
         box-sizing: border-box;
         padding: 10px;
         width: 100%;
-        min-height: 300px;
         text-align: center;
         outline: none;
     }
