@@ -36,6 +36,22 @@
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
     },
     {
+        "name": "Java",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+    },
+    {
+        "name": "Gradle",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg"
+    },
+    {
+        "name": "Dart",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+    },
+    {
+        "name": "Flutter",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+    },
+    {
         "name": "Go",
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
     },
@@ -44,15 +60,15 @@
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
     },
     {
-        "name": "Java",
-        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-    },
-    {
         "name": "Lua",
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"
     },
     {
         "name": "Chrome Extensions",
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
+    },
+    {
+        "name": "Visual Studio Code",
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
     }
 ]
