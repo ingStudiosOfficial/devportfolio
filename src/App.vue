@@ -11,15 +11,23 @@ import '@material/web/ripple/ripple.js';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the CSS file
+import router from './router';
 
 const openSocialLink = () => {
     const socialIcons = document.querySelectorAll('.social-icon');
     socialIcons.forEach(socialIcon => {
         socialIcon.addEventListener('click', () => {
-            window.open(socialIcon.dataset.href, '_blank')
+            window.open(socialIcon.dataset.href, '_blank');
         });
     });
 };
+
+function navigateToPage() {
+    const pageIcons = document.querySelectorAll('.nav-button');
+    pageIcons.forEach(icon => {
+        icon.addEventListener('click', () => router.push(icon.dataset.href));
+    });
+}
 
 onMounted(() => {
     // Initialize AOS when your app mounts
@@ -29,6 +37,7 @@ onMounted(() => {
         once: true,     // whether animation should happen only once - default
         easing: 'ease-out', // easing for AOS animations
     });
+    navigateToPage();
     openSocialLink();
 });
 </script>
@@ -38,14 +47,14 @@ onMounted(() => {
         <h1 class="header-text">Ethan Lee's Portfolio</h1>
         <Tooltip text="Home" offset="-100px">
             <template #trigger>
-                <md-icon-button target="_self" href="/" class="nav-button">
+                <md-icon-button data-href="/" target="_self" class="nav-button">
                     <md-icon>home</md-icon>
                 </md-icon-button>
             </template>
         </Tooltip>
         <Tooltip text="Projects" offset="-100px">
             <template #trigger>
-                <md-icon-button target="_self" href="/projects" class="nav-button">
+                <md-icon-button data-href="/projects" target="_self" class="nav-button">
                     <md-icon>work</md-icon>
                 </md-icon-button>
             </template>
