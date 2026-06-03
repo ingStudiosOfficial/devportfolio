@@ -73,5 +73,10 @@
         "name": "Examduler",
         "link": "https://api.github.com/repos/ingStudiosOfficial/examduler",
         "newFormat": true
+    },
+    {
+        "name": "Turtlrbrowse",
+        "link": "https://api.github.com/repos/ingStudiosOfficial/turtlebrowse",
+        "newFormat": true
     }
 ]
