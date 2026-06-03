@@ -78,5 +78,10 @@
         "name": "Turtlrbrowse",
         "link": "https://api.github.com/repos/ingStudiosOfficial/turtlebrowse",
         "newFormat": true
+    },
+    {
+        "name": "Materialvect",
+        "link": "https://api.github.com/repos/ingStudiosOfficial/materialvesct",
+        "newFormat": true
     }
 ]
