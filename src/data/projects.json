@@ -83,5 +83,10 @@
         "name": "Materialvect",
         "link": "https://api.github.com/repos/ingStudiosOfficial/materialvect",
         "newFormat": true
+    },
+    {
+        "name": "markdowned",
+        "link": "https://api.github.com/repos/ingStudiosOfficial/markdowned",
+        "newFormat": true
     }
 ]
